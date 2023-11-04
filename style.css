@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.contener{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: linear-gradient(to left bottom, #827397, #D8B9C3, #4D4C7D);
+}
+.pernt{
+    background-color: #0F4C75;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cards{
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    display: flex;
+    border-radius: 3px;
+    position: relative;
+}
+.cards img{
+    width: 100% ;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transform: scale(0);
+    transition: 0.3s;
+}
+.cards img.actev{  /* claas js*/
+    transform: scale(1);
+}
+.buttons{
+    width: 80%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons .hent{ 
+    width: 30px;
+    height: 10px;
+    border-radius: 30px;
+    background-color: #fff;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+.buttons .actev{  /* claas js*/
+    background-color: #1B262C;
+    color: #fff;
+}
+.next,
+.prev{
+    padding: 5px 20px;
+    border-radius: 3px;
+    margin: 0 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    user-select: none;
+}
+.next:hover,
+.prev:hover,
+.hent:hover{
+    background-color: #1B262C;
+    color: #fff;
+}
+.disepl{   /* claas js*/
+    background-color: #ffffff4f;
+    cursor: no-drop;
+}
